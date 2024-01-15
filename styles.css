@@ -7,18 +7,116 @@
 /* Start Header */
 /* End Header */
 /* Start Slider */
-.home{
+.slider{
     max-width: 100%;
     margin-top: -20px;
 }
-.home img{
+.slider img{
     width: 100%;
     height: 200px;
 }
 /* End Slider */
 /* Start About */
+.about{
+    max-width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
 .about h3{
-    text-align: center;
+    font-size: 35px;
 }
 
 /* End About */
+/* Start Services */
+.services{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 30px 50px;
+    border-bottom: 1px solid #ddd;
+}
+.services h3{
+    font-size: 35px;
+}
+.services h4{
+    font-size: 20px;
+}
+.services .box{
+    transition: .5s ease;
+}
+.services .box:hover{
+    transform: translateY(-20px);
+}
+/* End Services */
+/* Start Works */
+.works{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 30px 50px;
+    border-bottom: 1px solid #ddd;
+}
+.works .row{
+    /* gap: 5px; */
+}
+.works img{
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+}
+.works .box{
+    position: relative;
+}
+.works .content{
+    opacity: 0;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    height: 0;
+    transition: .5s ease;
+}
+.works .content h4,
+.works .content p{
+    color: #fff;
+}
+.works .box:hover .content{
+    position: absolute;
+    opacity: 1;
+    height: 100px;
+}
+@media screen and (max-width: 990px) {
+    .works .content{
+        opacity: 0;
+        background: rgba(0, 0, 0, .8);
+        text-align: center;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        width: 97%;
+        height: 0;
+        transition: .5s ease;
+    }
+}
+/* End Works */
+/* Start Teams */
+.teams{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 30px 50px;
+    border-bottom: 1px solid #ddd;
+}
+.teams img{
+    width: 100%;
+    height: 400px;
+}
+.teams .box {
+    margin-top: 30px;  
+}
+.teams .box h4{
+    transition: .5s ease;
+}
+.teams .box:hover h4{
+    transform: translateX(30px);
+}
+/* End Teams */
