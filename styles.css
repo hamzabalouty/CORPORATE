@@ -157,3 +157,50 @@
     transform: rotate(315deg);
 }
 /* End Pricing */
+/* Start Blog */
+.blog{
+    background-color: #f2f2f2;
+    max-width: 100%;
+    overflow: hidden;
+}
+.blog h2{
+    color: #f64b4b;
+}
+.blog .card{
+    position: relative;
+}
+.blog .card::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(135deg, #f64b4b 50%, black);
+    opacity: 0;
+    transition: .5s ease;
+}
+.blog .card:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+.blog .card::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, black 50%, #f64b4b);
+    opacity: 0;
+    transition: .5s ease;
+}
+.blog .card:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+.blog .card p{
+    line-height: 1.6;
+    font-size: 18px;
+}
+/* End Blog */
