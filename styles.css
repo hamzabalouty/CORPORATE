@@ -5,6 +5,17 @@
     scroll-behavior: smooth;
 }
 /* Start Header */
+.navbar-brand{
+    font-size: 25px;
+}
+.navbar{
+    position: relative;
+}
+.navbar-nav{
+    top: 0px;
+    right: 30px;
+    position: absolute;
+}
 /* End Header */
 /* Start Slider */
 .slider{
