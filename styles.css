@@ -124,3 +124,36 @@
     transform: translateX(30px);
 }
 /* End Teams */
+/* Start Pricing */
+.pricing .head,
+.pricing .f-row,
+.pricing .s-row{
+    text-align: center;
+}
+.pricing .head{
+    background-color: #ccc;
+}
+.pricing .f-row{
+    background-color: #f0f0f0;
+}
+.pricing .s-row{
+    background-color: #f6f6f6;
+}
+.pricing .active{
+    background-color: #f64b4b;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.pricing .prem{
+    position: absolute;
+    left: -45px;
+    top: 25px;
+    background-color: #f76363;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    transform: rotate(315deg);
+}
+/* End Pricing */
