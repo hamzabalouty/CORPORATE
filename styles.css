@@ -2,7 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html{
     scroll-behavior: smooth;
+}
+::selection{
+    background-color: #f64b4b;
+    color: #fff;
 }
 /* Start Header */
 .navbar-brand{
@@ -215,3 +221,100 @@
     font-size: 18px;
 }
 /* End Blog */
+/* Start Contact */
+.contact{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.contact textarea{
+    width: 98%;
+    margin-left: 1%;
+    height: 150px;
+}
+.contact button{
+    margin-left: 45%;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.contact .overlay-one{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f64b4b;
+    animation-name: move-one;
+    animation-duration: 4s;
+    position: absolute;
+    opacity: 100;
+    top: 10px;
+    display: block;
+    animation-iteration-count: infinite;
+}
+@keyframes move-one {
+    0%   {
+        left: 0;
+        background-color: #f64b4b;
+    }
+    25% {
+        background-color: #f76363;
+    }
+    50%  {
+        left: 100%;
+        background-color: #f76363;
+    }
+    75% {
+        background-color: #f64b4b;
+    }
+    100% {
+        left: 0;
+        background-color: #f76363;
+    }
+}
+.contact .overlay-two{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f64b4b;
+    animation-name: move-two;
+    animation-duration: 4s;
+    position: absolute;
+    opacity: 100;
+    top: 10px;
+    display: block;
+    animation-iteration-count: infinite;
+}
+@keyframes move-two {
+    0%   {
+        right: 0;
+        background-color: #f64b4b;
+    }
+    25% {
+        background-color: #f76363;
+    }
+    50%  {
+        right: 100%;
+        background-color: #f76363;
+    }
+    75% {
+        background-color: #f64b4b;
+    }
+    100% {
+        right: 0;
+        background-color: #f76363;
+    }
+}
+/* End Contact */
+/* Start Footer */
+.footer{
+    background-color: #f64b4b;
+}
+.footer p{
+    color: #fff;
+    font-size: 20px;
+}
+/* End Footer */
